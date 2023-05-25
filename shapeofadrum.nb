@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     20107,        522]
-NotebookOptionsPosition[     17513,        469]
-NotebookOutlinePosition[     17947,        486]
-CellTagsIndexPosition[     17904,        483]
+NotebookDataLength[     20836,        538]
+NotebookOptionsPosition[     18148,        484]
+NotebookOutlinePosition[     18582,        501]
+CellTagsIndexPosition[     18539,        498]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -52,14 +52,15 @@ Cell[BoxData[
   "General", "compat", 
    "\"Audio functionality has been superseded by preloaded functionality. The \
 package now being loaded may conflict with this. Please see the Compatibility \
-Guide for details.\"", 2, 1, 1, 30002857062880178854, "Local"},
+Guide for details.\"", 2, 1, 1, 30003097544238979854, "Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.89395125184272*^9, 3.8939519366578712`*^9},
+ CellChangeTimes->{3.89395125184272*^9, 3.8939519366578712`*^9, 
+  3.893988678408123*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"fe431114-5564-460a-9adf-fa92afed7897"]
-}, Closed]]
-}, Closed]],
+In[1]:=",ExpressionUUID->"b31fef5e-1623-4e65-aab6-ea01da0eed9a"]
+}, Open  ]]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -191,8 +192,8 @@ Cell[BoxData[{
    3.893951444744656*^9, 3.89395146720579*^9}, 3.893951793382741*^9, {
    3.893951831003077*^9, 3.8939519134737186`*^9}, {3.893952301913958*^9, 
    3.893952302034668*^9}},
- CellLabel->"In[33]:=",ExpressionUUID->"ce5665d8-189d-4925-84ba-006ddb77f6e8"]
-}, Closed]],
+ CellLabel->"In[4]:=",ExpressionUUID->"ce5665d8-189d-4925-84ba-006ddb77f6e8"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -206,20 +207,36 @@ Cell["Here we make the sounds used in the lesson", "Text",
   3.893951956340995*^9}},ExpressionUUID->"86a1847b-466d-472e-a4f7-\
 0da9b193d065"],
 
-Cell[BoxData[{
+Cell["Here enter the directory where you want to save the data", "Text",
+ CellChangeTimes->{{3.893988693360917*^9, 
+  3.893988700097434*^9}},ExpressionUUID->"066634bf-879c-4457-bba5-\
+104b11ce9730"],
+
+Cell[BoxData[
  RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "ParentDir", " ", "=", " ", 
+     "\"\</Users/jaimeredondoyuste/Documents/Codes/SoundOfADrum/Sounds/\>\""}]\
+, ";"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
-  "ParentDir", " ", "=", " ", 
-   "\"\</Users/jaimeredondoyuste/Documents/Codes/SoundOfADrum/Sounds/\>\""}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"SaveName", "[", "name_", "]"}], ":=", " ", 
-   RowBox[{"ParentDir", "<>", "name", "<>", "\"\<.wav\>\""}]}], 
-  ";"}]}], "Input",
+   RowBox[{
+    RowBox[{"SetDirectory", "@", 
+     RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   
+   RowBox[{
+    RowBox[{"ParentDir", " ", "=", " ", "\"\<Sounds/\>\""}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SaveName", "[", "name_", "]"}], ":=", " ", 
+     RowBox[{"ParentDir", "<>", "name", "<>", "\"\<.wav\>\""}]}], 
+    ";"}]}]}]], "Input",
  CellChangeTimes->{{3.893951963674697*^9, 3.893952007325473*^9}, {
-  3.893952287369399*^9, 3.893952289176108*^9}},
- CellLabel->"In[30]:=",ExpressionUUID->"3bf69d71-26f2-4c9d-87a4-9c5756cb3b9b"],
+  3.893952287369399*^9, 3.893952289176108*^9}, {3.893988690362753*^9, 
+  3.893988741520204*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"3bf69d71-26f2-4c9d-87a4-9c5756cb3b9b"],
 
 Cell["\<\
 First, we save the sound of circular drums of different radius. \
@@ -246,7 +263,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.893951959533017*^9, 3.8939519607150106`*^9}, {
   3.893952011142769*^9, 3.8939521203444443`*^9}, {3.8939522375733232`*^9, 
   3.893952296687711*^9}},
- CellLabel->"In[39]:=",ExpressionUUID->"964938ec-6c5d-4cb2-b55b-1a4cb0ec314b"],
+ CellLabel->"In[12]:=",ExpressionUUID->"964938ec-6c5d-4cb2-b55b-1a4cb0ec314b"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -261,9 +278,9 @@ Circle_0.4.wav\"\>",
    ",", "\<\"/Users/jaimeredondoyuste/Documents/Codes/SoundOfADrum/Sounds/\
 Circle_0.5.wav\"\>"}], "}"}]], "Output",
  CellChangeTimes->{{3.893952089577834*^9, 3.893952121130685*^9}, {
-  3.893952242668907*^9, 3.8939522483930893`*^9}, {3.893952298254806*^9, 
-  3.893952305617371*^9}},
- CellLabel->"Out[39]=",ExpressionUUID->"01eafeb2-c032-4811-8c8c-926d33f36e55"]
+   3.893952242668907*^9, 3.8939522483930893`*^9}, {3.893952298254806*^9, 
+   3.893952305617371*^9}, 3.893988679713381*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"2ebb92bb-c43c-469f-8c2f-b922d90b7883"]
 }, Open  ]],
 
 Cell["\<\
@@ -291,7 +308,7 @@ Cell[BoxData[
     RowBox[{"n", ",", "3", ",", "12", ",", "1"}], "}"}]}], 
   "\[IndentingNewLine]", "]"}]], "Input",
  CellChangeTimes->{{3.893952352818068*^9, 3.8939523736506453`*^9}},
- CellLabel->"In[40]:=",ExpressionUUID->"6813013d-63b2-4a7d-9d44-08beb91471ef"],
+ CellLabel->"In[13]:=",ExpressionUUID->"6813013d-63b2-4a7d-9d44-08beb91471ef"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -315,10 +332,10 @@ Polygon_10.wav\"\>",
 Polygon_11.wav\"\>", 
    ",", "\<\"/Users/jaimeredondoyuste/Documents/Codes/SoundOfADrum/Sounds/\
 Polygon_12.wav\"\>"}], "}"}]], "Output",
- CellChangeTimes->{3.893952375131981*^9},
- CellLabel->"Out[40]=",ExpressionUUID->"6b1e0f4a-1113-453d-808c-6ae101d16ea0"]
+ CellChangeTimes->{3.893952375131981*^9, 3.893988680256206*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"4983fefb-4e90-4e22-a90c-34fc184d9a17"]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -430,8 +447,7 @@ Cell[BoxData[{
   3.8939529576515293`*^9}, {3.893952997488885*^9, 3.893953057228334*^9}, {
   3.893953111003934*^9, 3.8939531242753153`*^9}, {3.893953232734425*^9, 
   3.893953268452702*^9}},
- CellLabel->
-  "In[127]:=",ExpressionUUID->"a85f5d05-4399-4682-9b05-790f32384a42"],
+ CellLabel->"In[14]:=",ExpressionUUID->"a85f5d05-4399-4682-9b05-790f32384a42"],
 
 Cell["We now extract the sound of the GW150914 event", "Text",
  CellChangeTimes->{{3.8939531349388313`*^9, 
@@ -455,16 +471,15 @@ Cell[BoxData[{
   RowBox[{"mass150914", ",", " ", "spin150914", ",", " ", 
    RowBox[{"SaveName", "[", "\"\<150914\>\"", "]"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.893953130373654*^9, 3.893953188990535*^9}},
- CellLabel->
-  "In[133]:=",ExpressionUUID->"89728506-297b-4c15-b737-8ba1b345557c"],
+ CellLabel->"In[20]:=",ExpressionUUID->"89728506-297b-4c15-b737-8ba1b345557c"],
 
 Cell[BoxData["\<\"/Users/jaimeredondoyuste/Documents/Codes/SoundOfADrum/\
 Sounds/150914.wav\"\>"], "Output",
- CellChangeTimes->{3.893953191177343*^9, 3.893953271161483*^9},
- CellLabel->
-  "Out[136]=",ExpressionUUID->"5ca690d5-2d68-4739-9670-aa7d08577f9e"]
+ CellChangeTimes->{3.893953191177343*^9, 3.893953271161483*^9, 
+  3.893988680695122*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"8c190421-068a-48c2-a842-20ac157d4110"]
 }, Open  ]]
-}, Closed]]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1335, 837},
@@ -492,37 +507,38 @@ Cell[CellGroupData[{
 Cell[983, 34, 281, 4, 45, "Subsubsection",ExpressionUUID->"3c78d793-2dcb-4406-bf11-2b76719a7783"],
 Cell[CellGroupData[{
 Cell[1289, 42, 301, 5, 73, "Input",ExpressionUUID->"5b1b7098-39b1-4238-b5f2-45a0e61f4e3b"],
-Cell[1593, 49, 486, 10, 28, "Message",ExpressionUUID->"fe431114-5564-460a-9adf-fa92afed7897"]
-}, Closed]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[2128, 65, 175, 3, 37, "Subsubsection",ExpressionUUID->"0038aa12-1cc8-4483-aace-7929c819824f"],
-Cell[2306, 70, 4890, 123, 897, "Input",ExpressionUUID->"ce5665d8-189d-4925-84ba-006ddb77f6e8"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[7233, 198, 175, 3, 37, "Subsubsection",ExpressionUUID->"a0281979-8004-4cfd-b7e3-cd09d56e6485"],
-Cell[7411, 203, 184, 3, 35, "Text",ExpressionUUID->"86a1847b-466d-472e-a4f7-0da9b193d065"],
-Cell[7598, 208, 534, 13, 52, "Input",ExpressionUUID->"3bf69d71-26f2-4c9d-87a4-9c5756cb3b9b"],
-Cell[8135, 223, 214, 5, 35, "Text",ExpressionUUID->"a5fb5f38-edc4-4143-814f-926b0232c268"],
-Cell[CellGroupData[{
-Cell[8374, 232, 783, 16, 157, "Input",ExpressionUUID->"964938ec-6c5d-4cb2-b55b-1a4cb0ec314b"],
-Cell[9160, 250, 784, 15, 77, "Output",ExpressionUUID->"01eafeb2-c032-4811-8c8c-926d33f36e55"]
+Cell[1593, 49, 511, 11, 28, "Message",ExpressionUUID->"b31fef5e-1623-4e65-aab6-ea01da0eed9a"]
+}, Open  ]]
 }, Open  ]],
-Cell[9959, 268, 238, 6, 35, "Text",ExpressionUUID->"2fd589c8-41f8-498f-8c96-141bcd659587"],
 Cell[CellGroupData[{
-Cell[10222, 278, 707, 15, 157, "Input",ExpressionUUID->"6813013d-63b2-4a7d-9d44-08beb91471ef"],
-Cell[10932, 295, 1143, 23, 119, "Output",ExpressionUUID->"6b1e0f4a-1113-453d-808c-6ae101d16ea0"]
+Cell[2153, 66, 175, 3, 45, "Subsubsection",ExpressionUUID->"0038aa12-1cc8-4483-aace-7929c819824f"],
+Cell[2331, 71, 4889, 123, 897, "Input",ExpressionUUID->"ce5665d8-189d-4925-84ba-006ddb77f6e8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7257, 199, 175, 3, 45, "Subsubsection",ExpressionUUID->"a0281979-8004-4cfd-b7e3-cd09d56e6485"],
+Cell[7435, 204, 184, 3, 35, "Text",ExpressionUUID->"86a1847b-466d-472e-a4f7-0da9b193d065"],
+Cell[7622, 209, 198, 3, 35, "Text",ExpressionUUID->"066634bf-879c-4457-bba5-104b11ce9730"],
+Cell[7823, 214, 885, 24, 149, "Input",ExpressionUUID->"3bf69d71-26f2-4c9d-87a4-9c5756cb3b9b"],
+Cell[8711, 240, 214, 5, 35, "Text",ExpressionUUID->"a5fb5f38-edc4-4143-814f-926b0232c268"],
+Cell[CellGroupData[{
+Cell[8950, 249, 783, 16, 157, "Input",ExpressionUUID->"964938ec-6c5d-4cb2-b55b-1a4cb0ec314b"],
+Cell[9736, 267, 808, 15, 77, "Output",ExpressionUUID->"2ebb92bb-c43c-469f-8c2f-b922d90b7883"]
+}, Open  ]],
+Cell[10559, 285, 238, 6, 35, "Text",ExpressionUUID->"2fd589c8-41f8-498f-8c96-141bcd659587"],
+Cell[CellGroupData[{
+Cell[10822, 295, 707, 15, 157, "Input",ExpressionUUID->"6813013d-63b2-4a7d-9d44-08beb91471ef"],
+Cell[11532, 312, 1165, 23, 119, "Output",ExpressionUUID->"4983fefb-4e90-4e22-a90c-34fc184d9a17"]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[12124, 324, 175, 3, 37, "Subsubsection",ExpressionUUID->"a47c4467-3613-4dce-9263-104ed9d2947c"],
-Cell[12302, 329, 4001, 104, 578, "Input",ExpressionUUID->"a85f5d05-4399-4682-9b05-790f32384a42"],
-Cell[16306, 435, 192, 3, 35, "Text",ExpressionUUID->"51529bd9-9fe5-4662-a246-ff4228e6f6a9"],
+Cell[12746, 341, 175, 3, 45, "Subsubsection",ExpressionUUID->"a47c4467-3613-4dce-9263-104ed9d2947c"],
+Cell[12924, 346, 3997, 103, 578, "Input",ExpressionUUID->"a85f5d05-4399-4682-9b05-790f32384a42"],
+Cell[16924, 451, 192, 3, 35, "Text",ExpressionUUID->"51529bd9-9fe5-4662-a246-ff4228e6f6a9"],
 Cell[CellGroupData[{
-Cell[16523, 442, 692, 16, 94, "Input",ExpressionUUID->"89728506-297b-4c15-b737-8ba1b345557c"],
-Cell[17218, 460, 255, 4, 34, "Output",ExpressionUUID->"5ca690d5-2d68-4739-9670-aa7d08577f9e"]
+Cell[17141, 458, 688, 15, 94, "Input",ExpressionUUID->"89728506-297b-4c15-b737-8ba1b345557c"],
+Cell[17832, 475, 276, 4, 34, "Output",ExpressionUUID->"8c190421-068a-48c2-a842-20ac157d4110"]
 }, Open  ]]
-}, Closed]]
+}, Open  ]]
 }, Open  ]]
 }
 ]
